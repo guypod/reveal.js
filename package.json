@@ -7,7 +7,9 @@
   "main": "js/reveal.js",
   "scripts": {
     "test": "snyk test && grunt test",
-    "start": "grunt serve"
+    "start": "grunt serve",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": {
     "name": "Hakim El Hattab",
@@ -22,11 +24,12 @@
     "node": "~4.1.1"
   },
   "dependencies": {
-    "express": "~4.13.3",
-    "grunt-cli": "^0.1.13",
+    "express": "4.14.0",
+    "grunt-cli": "1.0.0",
     "mustache": "~2.2.1",
     "socket.io": "^1.4.1",
-    "underscore": "~1.8.3"
+    "underscore": "~1.8.3",
+    "snyk": "1.15.0"
   },
   "devDependencies": {
     "grunt-contrib-qunit": "~0.7.0",
@@ -39,8 +42,8 @@
     "grunt-autoprefixer": "~3.0.3",
     "grunt-zip": "~0.17.1",
     "grunt": "~0.4.5",
-    "node-sass": "~3.3.3",
-    "snyk": "^1.13.2"
+    "node-sass": "~3.3.3"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
