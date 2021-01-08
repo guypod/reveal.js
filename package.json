@@ -27,7 +27,7 @@
     "express": "4.14.0",
     "grunt-cli": "1.0.0",
     "mustache": "~2.2.1",
-    "socket.io": "^1.4.1",
+    "socket.io": "^2.4.0",
     "underscore": "~1.8.3",
     "snyk": "1.15.0"
   },
